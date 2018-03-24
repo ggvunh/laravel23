@@ -12,5 +12,19 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/cats');
+});
+
+Route::get('/cats/{id}', function($id){
+    echo $id;
+});
+
+Route::get('/cats', function(){
+    return 'All cats';
+});
+
+Route::get('/about', function(){
+    $numberCat = 100;
+    $name = 'Tom';
+    return view('about', compact(['numberCat', 'name']));
 });

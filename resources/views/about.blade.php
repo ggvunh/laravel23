@@ -1,0 +1,1 @@
+<h1> There are over <?php echo $numberCat . " - " . $name ; ?> cats on this site </h1>
