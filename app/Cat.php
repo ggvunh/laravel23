@@ -3,7 +3,6 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Breed;
 
 class Cat extends Model
 {
@@ -12,6 +11,6 @@ class Cat extends Model
 
     public function breed()
     {
-        return $this->belongsTo('Breed');
+        return $this->belongsTo('App\Breed', 'breed_id', 'id');
     }
 }
