@@ -23,7 +23,7 @@ class CatController extends Controller
 
     public function create()
     {
-        $breeds = Breed::all()->pluck('name', 'id');
-        return view('cats.create', compact('breeds'));
+        // $breeds = Breed::all()->pluck('name', 'id');
+        return view('cats.create');
     }
 }

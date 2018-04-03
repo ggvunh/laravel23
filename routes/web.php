@@ -28,8 +28,8 @@ Route::post('/cats', function(){
 // update
 Route::get('cats/{id}/update', function($id){
   $cat = Cat::findOrFail($id);
-  $breeds = Breed::all()->pluck('name', 'id');
-  return view('cats.update', compact('cat', 'breeds'));
+  // $breeds = Breed::all()->pluck('name', 'id');
+  return view('cats.update', compact('cat'));
 });
 
 Route::put('cats/{id}', function($id){
