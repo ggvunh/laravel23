@@ -3,6 +3,9 @@
   <div class="form-controls">
     {!! Form::text('name', null, ['class' => 'form-control']) !!}
   </div>
+  @if($errors->has('name'))
+    <p class="text-danger">{{$errors->first('name')}}</p>
+  @endif
 </div>
 
 <div class="form-group">

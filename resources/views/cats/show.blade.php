@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.app')
 @section('header')
  <h1>Show detail cat</h1>
 @stop
