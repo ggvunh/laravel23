@@ -66,6 +66,7 @@ Route::group(['middleware' => 'auth'] , function(){
 });
 
 Route::resource('photos', 'PhotoController');
+Route::resource('categories', 'CategoryController');
 
 Auth::routes();
 
